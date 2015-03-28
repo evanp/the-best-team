@@ -5,22 +5,22 @@ router = express.Router()
 
 nameToWeight = (name) ->
   switch name.toUpperCase()
-    case "IGNORE":
+    when "IGNORE"
       0
-    case "LOW":
+    when "LOW"
       0.25
-    case "MEDIUM":
+    when "MEDIUM"
       0.5
-    case "HIGH":
+    when "HIGH"
       1.0
-    else:
+    else
       0
 
 inverted = (parameter) ->
   switch parameter
-    when "WHIP":
+    when "WHIP"
       true
-    when "ERA":
+    when "ERA"
       true
     else
       false

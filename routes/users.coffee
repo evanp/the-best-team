@@ -6,4 +6,5 @@ router = express.Router()
 router.get '/', (req, res) ->
   res.send 'respond with a resource'
   return
+  
 module.exports = router

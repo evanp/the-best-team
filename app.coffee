@@ -6,6 +6,7 @@ cookieParser = require('cookie-parser')
 bodyParser = require('body-parser')
 routes = require('./routes/index')
 users = require('./routes/users')
+
 app = express()
 # view engine setup
 app.set 'views', path.join(__dirname, 'views')
@@ -24,6 +25,7 @@ app.use (req, res, next) ->
   err.status = 404
   next err
   return
+
 #/ error handlers
 # development error handler
 # will print stacktrace
@@ -34,6 +36,7 @@ if app.get('env') == 'development'
       message: err.message
       error: err
     return
+
 # production error handler
 # no stacktraces leaked to user
 app.use (err, req, res, next) ->
@@ -42,4 +45,5 @@ app.use (err, req, res, next) ->
     message: err.message
     error: {}
   return
+
 module.exports = app

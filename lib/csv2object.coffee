@@ -1,5 +1,8 @@
 fs = require "fs"
 
+split = require "split"
+csv = require "csv"
+
 csv2object = (filename, callback) ->
 
   noFirstLine = true

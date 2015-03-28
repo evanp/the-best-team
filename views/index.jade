@@ -1,5 +1,389 @@
-extends layout
-
-block content
-  h1= title
-  p Welcome to #{title}
+doctype html
+html
+  style.
+    header {
+    background-color:#f3f3f3;
+    color:#165B9E;
+    text-align:center;
+    padding:5px;
+    border:3px solid black;
+    }
+    nav {
+    line-height:20px;
+    background-color:black;
+    color:white;
+    width:200px;
+    float:left;
+    padding:5px;
+    margin:20px;
+    }
+    #montreal {background-color:lightgrey;
+    color:black;
+    width:400px;
+    height:100px;
+    float:left;
+    padding:10px;
+    margin:20px;
+    border: 1px solid darkgrey;
+    border-radius: 0px 0px 0px 0px
+    }
+    #atlanta {background-color:lightgrey;
+    color:black;
+    width:400px;
+    height:100px;
+    text-align:center;
+    padding:10px;
+    margin:0px;
+    border: 1px solid darkgrey;
+    border-radius: 2px 2px 0px 0px
+    }
+    #newyork {background-color:lightgrey;
+    color:black;
+    width:400px;
+    height:100px;
+    text-align:center;
+    padding:15px;
+    margin:20px;
+    border: 1px solid darkgrey;
+    border-radius: 2px 2px 0px 0px
+    }
+    #philadelphia {background-color:lightgrey;
+    color:black;
+    width:400px;
+    height:100px;
+    text-align:center;
+    padding:15px;
+    margin:20px;
+    border: 1px solid darkgrey;
+    border-radius: 2px 2px 0px 0px
+    }
+    #florida {background-color:lightgrey;
+    color:black;
+    width:400px;
+    height:100px;
+    text-align:center;
+    padding:15px;
+    margin:20px;
+    border: 1px solid darkgrey;
+    border-radius: 2px 2px 0px 0px
+    }
+    #cincinnati {background-color:lightgrey;
+    color:black;
+    width:400px;
+    height:100px;
+    text-align:center;
+    padding:15px;
+    margin:20px;
+    border: 1px solid darkgrey;
+    border-radius: 2px 2px 0px 0px
+    }
+    #houston {background-color:lightgrey;
+    color:black;
+    width:400px;
+    height:100px;
+    text-align:center;
+    padding:15px;
+    margin:20px;
+    border: 1px solid darkgrey;
+    border-radius: 2px 2px 0px 0px
+    }
+    #pittsburgh {background-color:lightgrey;
+    color:black;
+    width:400px;
+    height:100px;
+    text-align:center;
+    padding:15px;
+    margin:20px;
+    border: 1px solid darkgrey;
+    border-radius: 2px 2px 0px 0px
+    }
+    #stlouis {background-color:lightgrey;
+    color:black;
+    width:400px;
+    height:100px;
+    text-align:center;
+    padding:15px;
+    margin:20px;
+    border: 1px solid darkgrey;
+    border-radius: 2px 2px 0px 0px
+    }
+    #chicago {background-color:lightgrey;
+    color:black;
+    width:400px;
+    height:100px;
+    text-align:center;
+    padding:15px;
+    margin:20px;
+    border: 1px solid darkgrey;
+    border-radius: 2px 2px 0px 0px
+    }
+    #losangeles {background-color:lightgrey;
+    color:black;
+    width:400px;
+    height:100px;
+    text-align:center;
+    padding:15px;
+    margin:20px;
+    border: 1px solid darkgrey;
+    border-radius: 2px 2px 0px 0px
+    }
+    #sanfrancisco {background-color:lightgrey;
+    color:black;
+    width:400px;
+    height:100px;
+    text-align:center;
+    padding:15px;
+    margin:20px;
+    border: 1px solid darkgrey;
+    border-radius: 2px 2px 0px 0px
+    }
+    #colorado {background-color:lightgrey;
+    color:black;
+    width:400px;
+    height:100px;
+    text-align:center;
+    padding:15px;
+    margin:20px;
+    border: 1px solid darkgrey;
+    border-radius: 2px 2px 0px 0px
+    }
+    #sandiego {background-color:lightgrey;
+    color:black;
+    width:400px;
+    height:100px;
+    text-align:center;
+    padding:15px;
+    margin:20px;
+    border: 1px solid darkgrey;
+    border-radius: 2px 2px 0px 0px
+    }
+    #texas {background-color:lightgrey;
+    color:black;
+    width:300px;
+    height:100px;
+    text-align:center;
+    padding:15px;
+    margin:20px;
+    border: 1px solid darkgrey;
+    border-radius: 0px 0px 0px 0px
+    }
+  header
+    h1 The best Baseball team in 1994.
+    | &#x9;
+    p(style='color:#EF4A4E') Made in Notman&apos;s House, Montreal.
+  nav
+    h4 Criteria #1
+    form(action='action_page.php', oninput='x.value=parseInt(a.value)')
+      | 0
+      input#a(type='range', name='a', value='50%')
+      output(type='number', name='x', for='a') 100%
+      br
+      br
+    h4 Criteria #2
+    form(action='action_page.php', oninput='x.value=parseInt(a.value)')
+      | 0
+      input#a(type='range', name='a', value='50%')
+      output(type='number', name='x', for='a') 100%
+      br
+      br
+    h4 Criteria #3
+    form(action='action_page.php', oninput='x.value=parseInt(a.value)')
+      | 0
+      input#a(type='range', name='a', value='50%')
+      output(type='number', name='x', for='a') 100%
+      br
+      br
+    h4 Criteria #4
+    form(action='action_page.php', oninput='x.value=parseInt(a.value)')
+      | 0
+      input#a(type='range', name='a', value='50%')
+      output(type='number', name='x', for='a') 100%
+      br
+      br
+    h4 Criteria #5
+    form(action='action_page.php', oninput='x.value=parseInt(a.value)')
+      | 0
+      input#a(type='range', name='a', value='50%')
+      output(type='number', name='x', for='a') 100%
+      br
+      br
+  | &#x9;
+  | &#x9;
+  | &#x9;
+  #montreal
+    .list-group
+      a.list-group-item.active(href='#')
+        h4.list-group-item-heading Montreal Expos
+        |     
+        p.list-group-item-text Last year of Montreal&apos;s baseball team
+    | &#x9;
+    br
+    br
+    br
+    | &#x9;
+    | &#x9;
+    | &#x9;
+    #atlanta
+      .list-group
+        a.list-group-item.active(href='#')
+          h4.list-group-item-heading Atlanta Braves
+          |     
+          p.list-group-item-text Braves
+      | &#x9;
+      br
+      br
+      br
+      | &#x9;&#x9;
+      | &#x9;
+      #newyork
+        .list-group
+          a.list-group-item.active(href='#')
+            h4.list-group-item-heading New York Mets
+            |     
+            p.list-group-item-text
+        br
+        br
+        br
+        | &#x9;&#x9;
+        | &#x9;
+        #philadelphia
+          .list-group
+            a.list-group-item.active(href='#')
+              h4.list-group-item-heading Philadelphia phillies
+              |     
+              p.list-group-item-text
+          br
+          br
+          br
+          | &#x9;&#x9;
+          | &#x9;
+          #florida
+            .list-group
+              a.list-group-item.active(href='#')
+                h4.list-group-item-heading Florida Marlins
+                |     
+                p.list-group-item-text
+            br
+            br
+            br
+            | &#x9;&#x9;
+            | &#x9;
+            #cincinnati
+              .list-group
+                a.list-group-item.active(href='#')
+                  h4.list-group-item-heading Cincinnati Reds
+                  |     
+                  p.list-group-item-text
+              br
+              br
+              br
+              | &#x9;
+              | &#x9;
+              #houston
+                .list-group
+                  a.list-group-item.active(href='#')
+                    h4.list-group-item-heading Houston Astros
+                    |     
+                    p.list-group-item-text
+                br
+                br
+                br
+                | &#x9;
+                | &#x9;
+                #pittsburgh
+                  .list-group
+                    a.list-group-item.active(href='#')
+                      h4.list-group-item-heading Pittsburgh Pirates
+                      |     
+                      p.list-group-item-text
+                  br
+                  br
+                  br
+                  | &#x9;&#x9;
+                  | &#x9;
+                  #stlouis
+                    .list-group
+                      a.list-group-item.active(href='#')
+                        h4.list-group-item-heading St-Louis Cardinals
+                        |     
+                        p.list-group-item-text
+                    br
+                    br
+                    br
+                    | &#x9;&#x9;
+                    | &#x9;
+                    #chicago
+                      .list-group
+                        a.list-group-item.active(href='#')
+                          h4.list-group-item-heading Chicago Cubs
+                          |     
+                          p.list-group-item-text
+                      br
+                      br
+                      br
+                      | &#x9;
+                      | &#x9;
+                      #losangeles
+                        .list-group
+                          a.list-group-item.active(href='#')
+                            h4.list-group-item-heading LA Dodgers
+                            |     
+                            p.list-group-item-text
+                        br
+                        br
+                        br
+                        | &#x9;&#x9;
+                        | &#x9;
+                        #sanfrancisco
+                          .list-group
+                            a.list-group-item.active(href='#')
+                              h4.list-group-item-heading San Francisco Giants
+                              |     
+                              p.list-group-item-text
+                          br
+                          br
+                          br
+                          | &#x9;&#x9;
+                          | &#x9;
+                          #colorado
+                            .list-group
+                              a.list-group-item.active(href='#')
+                                h4.list-group-item-heading Colorado Rockies
+                                |     
+                                p.list-group-item-text
+                            br
+                            br
+                            br
+                            | &#x9;&#x9;
+                            | &#x9;
+                            #sandiego
+                              .list-group
+                                a.list-group-item.active(href='#')
+                                  h4.list-group-item-heading San Diego Padres
+                                  |     
+                                  p.list-group-item-text
+                              br
+                              br
+                              br
+                              | &#x9;&#x9;
+                              | &#x9;
+                              #texas
+                                .list-group
+                                  a.list-group-item.active(href='#')
+                                    h4.list-group-item-heading Texas Rangers
+                                    |     
+                                    p.list-group-item-text
+                                br
+                                br
+                                br
+                                | &#x9;&#x9;
+                                | &#x9;
+                                #oakland
+                                  .list-group
+                                    a.list-group-item.active(href='#')
+                                      h4.list-group-item-heading Oakland Athletics
+                                      |     
+                                      p.list-group-item-text
+                                  br
+                                  br
+                                  br

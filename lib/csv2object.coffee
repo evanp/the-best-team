@@ -2,6 +2,7 @@ fs = require "fs"
 
 split = require "split"
 csv = require "csv"
+_ = require "lodash"
 
 csv2object = (filename, callback) ->
 

@@ -1,6 +1,9 @@
+util = require "util"
 express = require('express')
 FuzzyIOClient = require('fuzzy.io')
 _ = require("lodash")
+async = require("async")
+
 router = express.Router()
 
 nameToWeight = (name) ->
@@ -81,25 +84,26 @@ makeModel = (parameters) ->
   for parameter, weightName of parameters
     weight = nameToWeight weightName
     opposites =
-      veryLow: veryHigh
-      low: high
-      moderate: moderate
-      high: low
-      veryHigh: veryLow
-    for set of ["veryLow", "low", "moderate", "high", "veryHigh"]
+      veryLow: "veryHigh"
+      low: "high"
+      moderate: "moderate"
+      high: "low"
+      veryHigh: "veryLow"
+    for set in ["veryLow", "low", "moderate", "high", "veryHigh"]
       if inverted(parameter)
         scoreSet = opposites[set]
       else
         scoreSet = set
-      rule = "IF #{parameter} IS #{set} THEN score IS #{scoreSet} WEIGHT #{weight}"
+      rule = "IF #{parameter} IS #{set} THEN score IS #{scoreSet} WITH #{weight}"
       model.rules.push rule
   model
 
 ### GET users listing. ###
 
-router.get '/', (req, res, next) ->
+router.post '/', (req, res, next) ->
   parameters = req.body
   model = makeModel parameters
+  console.log util.inspect(model, { showHidden: true, depth: null })
   client = new FuzzyIOClient(process.env.FUZZY_IO_API_KEY)
   teamData = req.app.teamData
   teams = _.keys teamData
@@ -108,7 +112,11 @@ router.get '/', (req, res, next) ->
       next err
     else
       teamScore = (team, callback) ->
-        inputs = teamData[team]
+        inputs = _.pick(teamData[team], "K-BB%", "WHIP", "ERA", "RA9-WAR", "OPS", "Spd", "R-diff")
+        inputs["K-BB%"] = inputs["K-BB%"].substr(0, inputs["K-BB%"].length - 1)
+        for name, value of inputs
+          inputs[name] = parseFloat(value)
+        console.dir inputs
         client.evaluate agent.id, inputs, (err, outputs) ->
           if err
             callback err

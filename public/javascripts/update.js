@@ -16,7 +16,7 @@ var updateTable = function(data) {
     }
   });
   _.each(pairs, function(pair) {
-    $("table#t01").append("<tr><td>"+pair[0]+"</td><td>"+pair[1]+"</td>");
+    $("table#t01").append("<tr><td>"+pair[0]+"</td><td>"+pair[1].toFixed(1)+"</td>");
   });
 }
 

@@ -1,7 +1,9 @@
 debug = require('debug')('my-application')
 csv2object = require("../lib/csv2object")
 
-csv2object "../data/1994_combined_stats.csv", (err, map) ->
+path = require "path"
+
+csv2object path.join(__dirname, "..", "data", "1994_combined_stats.csv"), (err, map) ->
   if err
     console.error err
     process.exit -1

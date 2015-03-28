@@ -1,6 +1,6 @@
 fs = require "fs"
 
-csvToMap = (filename, callback) ->
+csv2object = (filename, callback) ->
 
   noFirstLine = true
 
@@ -31,3 +31,5 @@ csvToMap = (filename, callback) ->
 
   pipe.on 'end', () ->
     callback null, map
+
+module.exports = csv2object

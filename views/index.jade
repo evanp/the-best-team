@@ -39,91 +39,91 @@ html
     br
     h3 Run Differential
     form
-      input(type='radio', name='Importance', value='High')
+      input.importance(type='radio', name='rdiff', value='High')
       | &nbsp;&nbsp;Hell Yeah!&nbsp;&nbsp;
-      input(type='radio', name='Importance', value='Medium')
+      input.importance(type='radio', name='rdiff', value='Medium')
       | &nbsp;&nbsp;Kinda Sorta&nbsp;&nbsp;
-      input(type='radio', name='Importance', value='Low')
+      input.importance(type='radio', name='rdiff', value='Low')
       | &nbsp;&nbsp;Meh&nbsp;&nbsp;
-      input(type='radio', name='Importance', value='Ignore', checked='')
+      input.importance(type='radio', name='rdiff', value='Ignore', checked='')
       | &nbsp;&nbsp;Fuhhggedaboutit!&nbsp;&nbsp; 
       br
       hr
       br
     h3 ERA
     form
-      input(type='radio', name='Importance', value='High')
+      input.importance(type='radio', name='era', value='High')
       | &nbsp;&nbsp;Hell Yeah!&nbsp;&nbsp;
-      input(type='radio', name='Importance', value='Medium')
+      input.importance(type='radio', name='era', value='Medium')
       | &nbsp;&nbsp;Kinda Sorta&nbsp;&nbsp;
-      input(type='radio', name='Importance', value='Low')
+      input.importance(type='radio', name='era', value='Low')
       | &nbsp;&nbsp;Meh&nbsp;&nbsp;
-      input(type='radio', name='Importance', value='Ignore', checked='')
+      input.importance(type='radio', name='era', value='Ignore', checked='')
       | &nbsp;&nbsp;Fuhhggedaboutit!&nbsp;&nbsp; 
       br
       hr
       br
     h3 OPS
     form
-      input(type='radio', name='Importance', value='High')
+      input.importance(type='radio', name='ops', value='High')
       | &nbsp;&nbsp;Hell Yeah!&nbsp;&nbsp;
-      input(type='radio', name='Importance', value='Medium')
+      input.importance(type='radio', name='ops', value='Medium')
       | &nbsp;&nbsp;Kinda Sorta&nbsp;&nbsp;
-      input(type='radio', name='Importance', value='Low')
+      input.importance(type='radio', name='ops', value='Low')
       | &nbsp;&nbsp;Meh&nbsp;&nbsp;
-      input(type='radio', name='Importance', value='Ignore', checked='')
+      input.importance(type='radio', name='ops', value='Ignore', checked='')
       | &nbsp;&nbsp;Fuhhggedaboutit!&nbsp;&nbsp; 
       br
       hr
       br
     h3 Speed Score (SPD)
     form
-      input(type='radio', name='Importance', value='High')
+      input.importance(type='radio', name='spd', value='High')
       | &nbsp;&nbsp;Hell Yeah!&nbsp;&nbsp;
-      input(type='radio', name='Importance', value='Medium')
+      input.importance(type='radio', name='spd', value='Medium')
       | &nbsp;&nbsp;Kinda Sorta&nbsp;&nbsp;
-      input(type='radio', name='Importance', value='Low')
+      input.importance(type='radio', name='spd', value='Low')
       | &nbsp;&nbsp;Meh&nbsp;&nbsp;
-      input(type='radio', name='Importance', value='Ignore', checked='')
+      input.importance(type='radio', name='spd', value='Ignore', checked='')
       | &nbsp;&nbsp;Fuhhggedaboutit!&nbsp;&nbsp; 
       br
       hr
       br
     h3 Strikeouts to Walks (K-BB%)
     form
-      input(type='radio', name='Importance', value='High')
+      input.importance(type='radio', name='kbb', value='High')
       | &nbsp;&nbsp;Hell Yeah!&nbsp;&nbsp;
-      input(type='radio', name='Importance', value='Medium')
+      input.importance(type='radio', name='kbb', value='Medium')
       | &nbsp;&nbsp;Kinda Sorta&nbsp;&nbsp;
-      input(type='radio', name='Importance', value='Low')
+      input.importance(type='radio', name='kbb', value='Low')
       | &nbsp;&nbsp;Meh&nbsp;&nbsp;
-      input(type='radio', name='Importance', value='Ignore', checked='')
+      input.importance(type='radio', name='kbb', value='Ignore', checked='')
       | &nbsp;&nbsp;Fuhhggedaboutit!&nbsp;&nbsp; 
       br
       hr
       br
     h3 WHIP
     form
-      input(type='radio', name='Importance', value='High')
+      input.importance(type='radio', name='whip', value='High')
       | &nbsp;&nbsp;Hell Yeah!&nbsp;&nbsp;
-      input(type='radio', name='Importance', value='Medium')
+      input.importance(type='radio', name='whip', value='Medium')
       | &nbsp;&nbsp;Kinda Sorta&nbsp;&nbsp;
-      input(type='radio', name='Importance', value='Low')
+      input.importance(type='radio', name='whip', value='Low')
       | &nbsp;&nbsp;Meh&nbsp;&nbsp;
-      input(type='radio', name='Importance', value='Ignore', checked='')
+      input.importance(type='radio', name='whip', value='Ignore', checked='')
       | &nbsp;&nbsp;Fuhhggedaboutit!&nbsp;&nbsp; 
       br
       hr
       br
     h3 RA9-WAR
     form
-      input(type='radio', name='Importance', value='High')
+      input.importance(type='radio', name='ra9war', value='High')
       | &nbsp;&nbsp;Hell Yeah!&nbsp;&nbsp;
-      input(type='radio', name='Importance', value='Medium')
+      input.importance(type='radio', name='ra9war', value='Medium')
       | &nbsp;&nbsp;Kinda Sorta&nbsp;&nbsp;
-      input(type='radio', name='Importance', value='Low')
+      input.importance(type='radio', name='ra9war', value='Low')
       | &nbsp;&nbsp;Meh&nbsp;&nbsp;
-      input(type='radio', name='Importance', value='Ignore', checked='')
+      input.importance(type='radio', name='ra9war', value='Ignore', checked='')
       | &nbsp;&nbsp;Fuhhggedaboutit!&nbsp;&nbsp; 
       br
       hr
@@ -330,5 +330,6 @@ html
           td xx
   footer
     h3 Copyright &copy; 2015 Expos Are The Best, Baseball Hack Day.
+  script(src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.5.0/lodash.js")
   script(src="//code.jquery.com/jquery-1.11.2.min.js")
   script(src="/javascripts/update.js")
